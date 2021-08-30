@@ -26,6 +26,7 @@ namespace GeneralStoreAPI.Controllers
 
             if (ModelState.IsValid)
             {
+                if item
                 //Store the model in the database
                 _context.Product.Add(model);
                 int changeCount = await _context.SaveChangesAsync();
